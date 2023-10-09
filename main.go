@@ -1,22 +1,22 @@
 package main
 import (
 	"flag"
-    "gopkg.in/yaml.v2"
-    "io/ioutil"
-    "log"
+	"gopkg.in/yaml.v2"
+	"io/ioutil"
+	"log"
 )
 type Conf struct {
 	Aliyunoss struct {
 		Endpoint		string	`yaml:"endpoint"`
 		AccessKeyId		string	`yaml:"accessKeyId"`
-		AccessKeySecret string	`yaml:"accessKeySecret"`
+		AccessKeySecret		string	`yaml:"accessKeySecret"`
 		BucketName		string	`yaml:"bucketName"`
 	}
 	Tencentcos struct {
 		BucketUrl		string	`yaml:"bucketUrl"`
 		SecretId		string	`yaml:"secretId"`
 		SecretKey		string	`yaml:"secretKey"`
-		StorageClass	string	`yaml:"storageClass"`
+		StorageClass		string	`yaml:"storageClass"`
 	}
 	Googlecs struct {
 		ProjectID		string	`yaml:"projectID"`
@@ -41,7 +41,7 @@ func readConf(file string) *Conf {
 	return &conf
 }
 func main() {
-	var mode		string
+	var mode	string
 	var confFile	string
 	var localFile	string 
 	flag.StringVar(&mode, "m", "", "")
