@@ -13,10 +13,10 @@ tencentcos:
 googlecs:
   projectID: xxxxxxxxxx
   bucketName: xxxxxxxxxx
-  credential: xxxxxxxxxx.json
+  credential: /etc/xxxxxxxxxx.json
   
 googledrive:
-  credential: xxxxxxxxxx.json
+  credential: /etc/xxxxxxxxxx.json
   parent: xxxxxxxxxx
 
 
