@@ -3,15 +3,18 @@ aliyunoss:
   accessKeyId: xxxxxxxxxx
   accessKeySecret: xxxxxxxxxx
   bucketName: xxxxxxxxxx
+  
 tencentcos:
   bucketUrl: https://xxxxxxxxxx.cos.ap-nanjing.myqcloud.com
   secretId: xxxxxxxxxx
   secretKey: xxxxxxxxxx
   storageClass: DEEP_ARCHIVE
+  
 googlecs:
   projectID: xxxxxxxxxx
   bucketName: xxxxxxxxxx
   credential: xxxxxxxxxx.json
+  
 googledrive:
   credential: xxxxxxxxxx.json
   parent: xxxxxxxxxx
